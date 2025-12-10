@@ -3,7 +3,7 @@ cask "terraci" do
   name "terraci"
   desc ""
   homepage "https://edelwud.github.io/terraci/"
-  version "0.3.8"
+  version "0.3.9"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,7 +11,13 @@ cask "terraci" do
 
   binary "terraci"
   manpage "manpages/terraci.1"
-  manpage "manpages/terraci-*.1"
+  manpage "manpages/terraci-completion.1"
+  manpage "manpages/terraci-generate.1"
+  manpage "manpages/terraci-graph.1"
+  manpage "manpages/terraci-init.1"
+  manpage "manpages/terraci-schema.1"
+  manpage "manpages/terraci-validate.1"
+  manpage "manpages/terraci-version.1"
   bash_completion "completions/terraci.bash"
   zsh_completion "completions/_terraci"
   fish_completion "completions/terraci.fish"
@@ -19,19 +25,19 @@ cask "terraci" do
   on_macos do
     url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_darwin_all.tar.gz",
         verified: "github.com/edelwud/terraci"
-    sha256 "0d911d4ae9216285a8b8c30779a98d9a5869195ecfcfa58e5733e773d0d86cb6"
+    sha256 "5313a4bd33988c4064bd6490c907dd64d481f32c7827fb15bda5cc367c048969"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_linux_amd64.tar.gz",
         verified: "github.com/edelwud/terraci"
-      sha256 "73909e4e26e347c75ec9ccfacef23389b4ce8c84001a59d95928c47a692ff9b7"
+      sha256 "b2c316e41e4945722f4f623b7467c4e53b8821c78037aa00ee41c5280b818770"
     end
     on_arm do
       url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_linux_arm64.tar.gz",
         verified: "github.com/edelwud/terraci"
-      sha256 "e196269474ec4eb43c4e0f4a3e0bb9ba7eee624fde18f78e69d5b95b9e59e13c"
+      sha256 "1d4298afbe8369277e9e04e61ae783aec9a7f4c1c3c2ec45eaba02840f736ccf"
     end
   end
 
