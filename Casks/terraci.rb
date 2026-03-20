@@ -3,7 +3,7 @@ cask "terraci" do
   name "terraci"
   desc ""
   homepage "https://edelwud.github.io/terraci/"
-  version "0.6.2"
+  version "0.6.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -25,19 +25,19 @@ cask "terraci" do
   on_macos do
     url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_darwin_all.tar.gz",
         verified: "github.com/edelwud/terraci"
-    sha256 "14d5f6424476164a7ecc1886fde25b601c5d7f074563358a71d8aa671d215b35"
+    sha256 "41ae1983f0730edf027e52272db24829f30110a212982b982bb2f910ef345f10"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_linux_amd64.tar.gz",
         verified: "github.com/edelwud/terraci"
-      sha256 "4a112437cf7f4d8e69e0026db9203fa8d63632d2a45433328ae18e0fc912aa23"
+      sha256 "0cc4cc2be369f38e2242b6ff1bc6a65c82899ca055d2457b0a12821e92e2d994"
     end
     on_arm do
       url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_linux_arm64.tar.gz",
         verified: "github.com/edelwud/terraci"
-      sha256 "0a43ec264488084cdea81a7eaa14e7afc5d4503b2cdd009fb30625e92dde9455"
+      sha256 "332f252b9d4cb4b840322eaf4ca5bd2dd5535f24e6ca9f8644803e4acef43766"
     end
   end
 
