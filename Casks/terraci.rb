@@ -4,24 +4,24 @@ cask "terraci" do
   zsh_completion "completions/_xterraci"
   fish_completion "completions/xterraci.fish"
 
-  version "0.9.5"
+  version "0.9.6"
 
   on_macos do
     url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_darwin_all.tar.gz",
         verified: "github.com/edelwud/terraci"
-    sha256 "99807cc37ca990113ab2fa448f79b1bb104353f283eff4e4fbdc46d0d7f2879a"
+    sha256 "35450eb4257ea82c1afdd8f1b9c7a00966cdc06629f34f3ee4931b1172ca0cd1"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_linux_amd64.tar.gz",
         verified: "github.com/edelwud/terraci"
-      sha256 "92b4037f1c80d0a8f7b1b6e55fff07dcf3b8940734fb14a1b1585765ffb437c0"
+      sha256 "28ea38f10bc1b1fd3dd530f9b2fd85e4376bb2dfa95c701abbbe1f17b5b591d0"
     end
     on_arm do
       url "https://github.com/edelwud/terraci/releases/download/v#{version}/terraci_#{version}_linux_arm64.tar.gz",
         verified: "github.com/edelwud/terraci"
-      sha256 "9113d5589f4f9970dbe14c73a316196ae34f1ceb0d5f0602bcaeb10c01abd29f"
+      sha256 "f23dce0bdea1f69a8af2b8fe37c55df63c26a874ded9958ac82851bdb7cc3e2b"
     end
   end
 
